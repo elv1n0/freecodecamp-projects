@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  padding: 50px 10px;
+  margin: 0 auto;
+  width: 70vw;
+  min-height: calc(100vh - 100px);
+  text-align: center;
+}
+
+hr {
+  margin: 30px auto;
+  width: 80%;
+  background-color: grey;
+  height: 2px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+section {
+  text-align: center;
+  padding: 50px 5px;
+  display: inline-block;
+  min-height: 100px;
+  width: 30%;
+}
+
+ul {
+  text-align: left;
+  list-style: inside;
+}

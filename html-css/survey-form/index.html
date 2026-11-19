@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Elvin's Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Elvin's Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this survey. It's my first personal project, hope you like it :)</p>
+    <form id="survey-form" action="#">
+    <fieldset>
+      <label id="name-label" for="name">Name<input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+      <label id="email-label" for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required /></label>
+      <label id="number-label" for="number">Age<input id="number" name="number" type="number" min="16" max="120" placeholder="Enter your age" /></label>
+      <label for="dropdown">How did you hear about this project?
+        <select id="dropdown" name="dropdown-menu">
+          <option value="">(select one)</option>
+          <option value="1">From the developer personally (me)</option>
+          <option value="2">My family or friends</option>
+          <option value="3">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>How would you rate the look of this page?</legend>
+      <label for="gorgeous"><input id="gorgeous" type="radio" name="rating" class="user-rating" value="Gorgeous" checked /> Gorgeous</label>
+      <label for="fine"><input id="fine" type="radio" name="rating" class="user-rating" value="Fine" /> Fine</label>
+      <label for="mid"><input id="mid" type="radio" name="rating" class="user-rating" value="Mid" /> Mid</label>
+      <label for="ugly"><input id="ugly" type="radio" name="rating" class="user-rating" value="Ugly" /> Ugly</label>
+    </fieldset>
+    <fieldset>
+      <legend>Which of these car brands would you like to drive? You can choose more than one:</legend>
+      <label for="audi-checkbox"><input type="checkbox" id="audi-checkbox" name="audi" value="Audi" /> Audi</label>
+      <label for="bmw-checkbox"><input type="checkbox" id="bmw-checkbox" name="bmw" value="BMW" /> BMW</label>
+      <label for="merc-checkbox"><input type="checkbox" id="merc-checkbox" name="mercedes" value="Mercedes" /> Mercedes-Benz</label>
+      <label for="ferrari-checkbox"><input type="checkbox" id="ferrari-checkbox" name="ferrari" value="Ferrari" /> Ferrari</label>
+      <label for="mclaren-checkbox"><input type="checkbox" id="mclaren-checkbox" name="mclaren" value="McLaren" /> McLaren</label>
+      <label for="lambo-checkbox"><input type="checkbox" id="lambo-checkbox" name="lambo" value="Lamborghini" /> Lamborghini</label>
+      <label for="lexus-checkbox"><input type="checkbox" id="lexus-checkbox" name="lexus" value="Lexus" /> Lexus</label>
+      <label for="tesla-checkbox"><input type="checkbox" id="tesla-checkbox" name="tesla" value="Tesla" /> Tesla</label>
+      <label for="maybach-checkbox"><input type="checkbox" id="maybach-checkbox" name="maybach" value="Maybach" /> Maybach</label>
+      <label for="bobby-checkbox"><input type="checkbox" id="bobby-checkbox" name="bobby-car" value="Bobby-Car" /> Bobby-Car</label>
+    </fieldset>
+    <fieldset>
+      <label for="text">What is your favorite video game and why?<textarea id="text" name="fav-game-text" rows="5" cols="30" placeholder="My favorite video game of all time is..."></textarea></label>
+     </fieldset>
+     <input id="submit" type="submit" value="Submit">
+    </form>
+  <p role="status" id="demo-status">Demo: Eingaben werden nicht gesendet oder gespeichert.</p>
+<script src="demo.js" defer></script>
+</body>
+</html>

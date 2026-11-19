@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  
+  <body>
+    <div class="container">
+      <header>
+      <h1 id="title">Elvin's Survey Form</h1>
+      <p id="description">Thank you for taking the time to complete this survey. It's my first personal project. I hope you like it!</p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Age (optional)</label>
+          <input type="number" id="number" name="age" min="13" max="100" placeholder="Age">
+        </div>
+
+        <div class="form-group">
+          <p>Which of the following options is your favorite planet?</p>
+          <select id="dropdown" name="planet">
+            <option disabled selected value>Select a planet</option>
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Which of the <i>Lord of the Rings</i> films is the best in your opinion?</p>
+          <label>
+            <input type="radio" name="best-film" value="the-fellowship-of-the-ring" checked>
+            The Fellowship of the Ring
+          </label>
+          <label>
+            <input type="radio" name="best-film" value="the-two-towers">
+            The Two Towers
+          </label>
+          <label>
+            <input type="radio" name="best-film" value="the-return-of-the-king">
+            The Return of the King
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Which car brands are german?</p>
+          <label>
+            <input type="checkbox" value="bmw">
+            BMW
+          </label>
+          <label>
+            <input type="checkbox" value="toyota">
+            Toyota
+          </label>
+          <label>
+            <input type="checkbox" value="ford">
+            Ford
+          </label>
+          <label>
+            <input type="checkbox" value="mercedes">
+            Mercedes
+          </label>
+          <label>
+            <input type="checkbox" value="honda">
+            Honda
+          </label>
+          <label>
+            <input type="checkbox" value="audi">
+            Audi
+          </label>
+          <label>
+            <input type="checkbox" value="lotus">
+            Lotus
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments?</p>
+          <textarea rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  <p role="status" id="demo-status">Demo: Eingaben werden nicht gesendet oder gespeichert.</p>
+<script src="demo.js" defer></script>
+</body>
+</html>

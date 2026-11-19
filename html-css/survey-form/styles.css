@@ -1,0 +1,89 @@
+body {
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(115deg, rgba(58, 58, 158, 0.9), rgba(136, 136, 206, 0.7));
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 18px;
+  }
+  
+  #title, #description {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  #description {
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 1em 2em;
+    background: rgba(27, 27, 50, 0.3);
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  fieldset:first-of-type {
+    margin-top: -1.5em;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.5em;
+  }
+  
+  .user-rating {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="checkbox"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    height: 2.5em;
+    font-size: 1.1rem;
+    background-color: rgba(136, 186, 227, 0.4);
+    border: none;
+    color: white;
+    min-width: 250px;
+  }
+  
+  #submit:hover {
+    background-color: #37af65;
+  }
+/* Packaging fix: include padding in the form width on small screens. */
+*, *::before, *::after { box-sizing: border-box; }
+form { width: min(100% - 2rem, 500px); min-width: 0; }
+input[type="submit"] { min-width: 0; }

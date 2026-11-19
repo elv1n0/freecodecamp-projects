@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2, p {
+  margin: 0;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border: 2px solid black;
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+  height: 70vh;
+  padding: 0 20px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: SeaShell;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  flex: 0 0 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid black;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3e3e3e;
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.features li {
+  padding: 5px 0;
+}
+
+.check {
+  color: #219c54;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.cross {
+  color: crimson;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  background: #f1be32;
+  color: black;
+  font-weight: bold;
+  border: 3px solid #eebe3a;
+  padding: 5px;
+  transition: background 0.3s;
+}
+
+a:hover {
+  background: #e6d291;
+}
+
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2
+}
+
+.premium-plan {
+  order: 2;
+}

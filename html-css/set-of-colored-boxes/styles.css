@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+.color-grid {
+  width: 100%;
+}
+
+.color-box {
+  display: inline-block;
+  margin: 20px 20px;
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.color1 {
+  background-color: #4287f5;
+}
+
+.color2 {
+  background-color: rgb(122, 32, 54);
+}
+
+.color3 {
+  background-color: green;
+}
+
+.color4 {
+  background-color: hsl(20, 80%, 50%);
+}
+
+.color5 {
+  background-color: yellow;
+}
